@@ -1,0 +1,38 @@
+.border {
+    border: 1px solid black;
+}
+
+main {
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch;
+}
+
+main nav {
+    width: 250px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+main nav > div {
+    padding: 20px;
+}
+
+main nav div.container-playlist {
+    flex-grow: 1;
+}
+
+#main-content {
+    flex: 1 0 auto;
+    background-color: aquamarine;
+    padding: 50px;
+}
+
+footer {
+    height: 100px;
+    background-color: #282828;
+    color: white;
+    padding: 1rem;
+}
