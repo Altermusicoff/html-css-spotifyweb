@@ -7,10 +7,8 @@
     <!-- font google -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <!-- lib fontawsome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    <!-- 12-bool -->
-    <link rel="stylesheet" href="lib/12-col.css">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/2e0cc00556.js" crossorigin="anonymous"></script>
     <!-- style -->
     <link rel="stylesheet" href="css/style.css">
     <title>spotifyweb</title>
@@ -22,7 +20,8 @@
         <nav class="border sidebar-wrapper">
 
             <div class="border sidebar-container">
-                <img class="none" src="img/logo.svg" alt="">
+              <a href="#"><img class="none" src="img/logo.svg" alt="">
+              </a>
             </div>
 
             <div class="border sidebar-container">
@@ -53,31 +52,155 @@
             </div>
 
             <div class="border sidebar-container container-playlist">
-                <h4>Playlist</h4>
+                <h3>Playlist</h3>
                 <ul>
-                    <li>playlist</li>
-                    <li>playlist</li>
-                    <li>playlist</li>
-                    <li>playlist</li>
-                    <li>playlist</li>
-                    <li>playlist</li>
+                  <li>
+                    <a href="#">
+                      <i class="fas fa-plus-square"></i> Crea Playlist
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Nome Playlist
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Nome Playlist
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Nome Playlist
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Nome Playlist
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Nome Playlist
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Nome Playlist
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Nome Playlist
+                    </a>
+                  </li>
                 </ul>
             </div>
 
             <div class="border sidebar-container">
-                John Doe
+              <div class="user">
+                <a class="" href="#">
+                  <i class="far fa-arrow-alt-circle-down fa-sm"></i>
+                  <span class="">Installa app</span>
+                </a>
             </div>
 
         </nav>
 
         <section id="main-content" class="border">
-            questo è il main container
+
+          <div class="upgrade">
+            <a href="#">EFFETTUA L'UPGRADE</a>
+          </div>
 
         </section>
     </main>
 
     <footer>
-        questo è il player
+
+      <!-- PARTE SINISTRA -->
+      <div class="track">
+
+        <img src="img/sinister.jpeg" alt="">
+        <ul class="titoli">
+          <li>
+            <a class="white-text" href="#">
+              <h4>Sinister</h4>
+            </a>
+          </li>
+          <li>
+            <a class="grey-text" href="#">
+              <h5>Brano Nome</h5>
+            </a>
+          </li>
+        </ul>
+        <ul class="folder">
+          <li>
+            <a class="grey-text" href="#">
+              <i class="far fa-heart fa-lg"></i>
+            </a>
+          </li>
+
+          <li>
+            <a class="grey-text" href="#">
+              <i class="far fa-folder fa-lg"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- PARTE CENTRALE -->
+      <div class="music-player">
+       <ul>
+         <li>
+           <a href="#"><i class="fas fa-random"></i></a>
+         </li>
+         <li>
+           <a href="#"><i class="fas fa-step-backward"></i></a>
+         </li>
+         <li id="play">
+           <a href="#"><i class="far fa-play-circle"></i></a>
+         </li>
+         <li>
+           <a href="#"><i class="fas fa-step-forward"></i></a>
+         </li>
+         <li>
+           <a href="#"><i class="fas fa-redo-alt"></i></a>
+         </li>
+       </ul>
+
+       <div class="loading-bar">
+         <div class="min-bar">
+           <i class="fas fa-circle"></i>
+         </div>
+
+         <p class="left-numb">0:25</p>
+         <p class="right-numb">4:35</p>
+       </div>
+     </div>
+
+     <!-- PARTE DESTRA -->
+
+     <div class="options">
+       <a href="#">
+         <i class="fas fa-list"></i>
+       </a>
+
+       <a href="#">
+         <i class="fas fa-desktop"></i>
+       </a>
+
+       <a href="#">
+         <i class="fas fa-volume-up"></i>
+       </a>
+
+       <div class="loading-bar">
+         <div class="min-bar">
+           <i class="fas fa-circle"></i>
+         </div>
+       </div>
+     </div>
     </footer>
+
 </body>
 </html>
