@@ -13,6 +13,15 @@ testo grigio: #a3a3a3;
   box-sizing: border-box;
 }
 
+
+.white-text{
+  color: white;
+}
+.grey-text{
+  color: #a3a3a3;
+}
+
+
 .border {
     border: 1px solid black;
 }
@@ -24,8 +33,9 @@ main {
     align-items: stretch;
 }
 
-li{
+a{
   color: #a3a3a3;
+  text-decoration: none;
 
 }
 
