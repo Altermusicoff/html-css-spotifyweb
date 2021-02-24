@@ -13,6 +13,10 @@ testo grigio: #a3a3a3;
   box-sizing: border-box;
 }
 
+body{
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+}
 
 .white-text{
   color: white;
@@ -53,6 +57,26 @@ main nav > div {
 
 main nav div.container-playlist {
     flex-grow: 1;
+}
+
+.mysquareplus{
+  display: flex;
+  align-items: center;
+}
+
+.mysquare{
+  background-color: #a3a3a3;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.myplus{
+  color: black;
+  font-size: 50px;
+  font-weight: 900;
 }
 
 #main-content {
