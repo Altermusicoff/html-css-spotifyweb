@@ -16,6 +16,7 @@ testo grigio: #a3a3a3;
  body{
    font-weight: 500;
    font-family: 'Montserrat', sans-serif;
+   display: flex;
  }
  ul{
    list-style-type: none;
@@ -52,10 +53,9 @@ testo grigio: #a3a3a3;
    background-color: black;
    color: white;
    height: calc(100vh - 100px);
-   position: fixed;
    display: flex;
    flex-direction: column;
-  overflow: hidden;
+   overflow: hidden;
  }
 
 .playlist{
@@ -63,6 +63,11 @@ testo grigio: #a3a3a3;
    overflow: auto;
    min-height: 15vh;
    flex-grow: 1;
+   -ms-overflow-style: none;  /* IE and Edge */
+   scrollbar-width: none;  /* Firefox */
+ }
+ .playlist::-webkit-scrollbar {
+   display: none;
  }
 
  header li{
@@ -129,14 +134,47 @@ testo grigio: #a3a3a3;
  }
 
  /* Proprietà Main */
+
+ /* Proprietà barra nav */
+main{
+ width: calc(100% - 250px);
+ background-color: #141922;
+ height: calc(100vh - 100px);
+ overflow: auto;
+}
+
+main .navigazione-section{
+ text-align: center;
+ margin: 25px 0 20px;
+ font-weight: 600;
+}
+.navigazione-section li{
+ display: inline-block;
+ margin: 0 15px;
+}
+.navigazione-section li a{
+ color: white;
+ opacity: 0.5;
+}
+.navigazione-section li a:hover{
+ opacity: 1;
+}
+.selezionato{
+ border-top: 2px solid #adff2f;
+ border-radius: 1px;
+ margin: 0 auto;
+ width: 40%;
+ display: none;
+}
+.active .selezionato{
+ display: block;
+}
+
    /* Proprietà Upgrade */
  .upgrade{
    background-color: rgba(0, 0, 0, 0.5);
    text-align: right;
-   position: fixed;
-   top: 0;
-   left: 250px;
-   width: calc(100% - 250px);
+   width: 100%;
    min-height: 100px;
    overflow: hidden;
    z-index: 200;
@@ -157,42 +195,6 @@ testo grigio: #a3a3a3;
    transform: scale(1.05);
  }
 
-   /* Proprietà barra nav */
- main{
-   margin-left: 250px;
-   margin-bottom: 100px;
-   padding-top: 100px;
-   background-color: #141922;
-   min-height: calc(100vh - 100px);
-   overflow: hidden;
- }
-
- main .navigazione-section{
-   text-align: center;
-   margin: 25px 0 20px;
-   font-weight: 600;
- }
- .navigazione-section li{
-   display: inline-block;
-   margin: 0 15px;
- }
- .navigazione-section li a{
-   color: white;
-   opacity: 0.5;
- }
- .navigazione-section li a:hover{
-   opacity: 1;
- }
- .selezionato{
-   border-top: 2px solid #adff2f;
-   border-radius: 1px;
-   margin: 0 auto;
-   width: 40%;
-   display: none;
- }
- .active .selezionato{
-   display: block;
- }
 
    /* Proprietà brani */
  main section{
