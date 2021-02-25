@@ -33,6 +33,7 @@ testo grigio: #a3a3a3;
  }
 
  /* Proprietà Header */
+
  header #logo{
    width: 180px;
    display: inline-block;
@@ -54,12 +55,14 @@ testo grigio: #a3a3a3;
    position: fixed;
    display: flex;
    flex-direction: column;
-   justify-content: space-between;
+  overflow: hidden;
  }
 
- header ul:last-child{
+.playlist{
    margin-bottom: 0;
    overflow: auto;
+   min-height: 15vh;
+   flex-grow: 1;
  }
 
  header li{

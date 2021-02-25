@@ -10,8 +10,8 @@
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/2e0cc00556.js" crossorigin="anonymous"></script>
     <!-- style -->
-    <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
 
     <title>spotifyweb</title>
   </head>
@@ -20,7 +20,7 @@
     <!-- ASIDE HEADER -->
     <header>
       <nav>
-        <div class="logo+playlist">
+        <div class="logo">
           <a id="logo" href="index.html">
             <img src="img/logo.svg" alt="Spotify logo">
             <img src="img/logo-small.svg" alt="Spotify logo no lettering">
@@ -44,7 +44,8 @@
             </li>
           </ul>
 
-          <ul class="playlist">
+
+          <ul>
             <li>
               <h3>PLAYLIST</h3>
             </li>
@@ -53,6 +54,12 @@
                 <span>+</span> Crea Playlist
               </a>
             </li>
+          </ul>
+        </div>
+
+
+        <div class="playlist">
+          <ul>
             <li>
               <a href="#">
                 Nome Playlist
@@ -129,7 +136,7 @@
       </nav>
 
       <!-- RECENTLY PLAYED -->
-      <section>
+      <section class="sezione-flex">
         <h2>Recently played</h2>
         <ul class="lista-flex">
           <li class="brano">
