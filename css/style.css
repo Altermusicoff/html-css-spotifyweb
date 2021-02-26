@@ -149,8 +149,10 @@ main .navigazione-section{
  font-weight: 600;
 }
 .navigazione-section li{
- display: inline-block;
- margin: 0 15px;
+  display: inline-block;
+  margin: 0 15px;
+  line-height: 25px;
+  padding: 20px 0;
 }
 .navigazione-section li a{
  color: white;
@@ -266,9 +268,9 @@ main .navigazione-section{
 
  /* Colonna footer sinistra */
  .data{
-   max-height: 60px;
    display: flex;
    align-items: center;
+   flex-basis: 20%;
  }
  .data img{
    width: 60px;
@@ -304,10 +306,8 @@ main .navigazione-section{
  /* Colonna footer centrale */
  .music-player{
    text-align: center;
-   width: 30%;
-   height: 100%;
-   min-width: 230px;
-   margin: 0 50px;
+   flex-basis: 60%;
+   min-width: 225px;
  }
 
  .music-player li{
@@ -331,7 +331,7 @@ main .navigazione-section{
 
  /* min */
  .loading-bar{
-   width: 90%;
+   width: 60%;
    max-width: 600px;
    margin: auto;
    height: 5px;
@@ -384,8 +384,8 @@ main .navigazione-section{
 
  /* Colonna footer destra */
  footer .options{
-   width: 20%;
    text-align: right;
+   flex-basis: 20%;
    min-width: 160px;
  }
  footer .options .loading-bar{
