@@ -36,7 +36,6 @@ testo grigio: #a3a3a3;
  /* Proprietà Header */
 
  header #logo{
-   width: 180px;
    display: inline-block;
    padding: 20px 0 20px 20px;
  }
@@ -137,10 +136,11 @@ testo grigio: #a3a3a3;
 
  /* Proprietà barra nav */
 main{
- width: calc(100% - 250px);
- background-color: #141922;
- height: calc(100vh - 100px);
- overflow: auto;
+  padding-top: 100px;
+  width: calc(100% - 250px);
+  background-color: #141922;
+  height: calc(100vh - 100px);
+  overflow: auto;
 }
 
 main .navigazione-section{
@@ -173,6 +173,9 @@ main .navigazione-section{
    /* Proprietà Upgrade */
  .upgrade{
    background-color: rgba(0, 0, 0, 0.5);
+   position: fixed;
+   top: 0;
+   right: 0;
    text-align: right;
    width: 100%;
    min-height: 100px;
@@ -188,7 +191,7 @@ main .navigazione-section{
    border: 2px solid white;
    border-radius: 25px;
    padding: 11px 30px;
-   margin: 25px 15px;
+   margin: 25px 35px;
    transition: transform 0.2s;
  }
  .upgrade a:hover{

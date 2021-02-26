@@ -21,8 +21,27 @@
 
   header nav{
     width: 50px;
+    justify-content: center;
   }
+
   main{
- width: calc(100% - 50px);
+    width: calc(100% - 50px);
   }
-}
+
+  .logo{
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  header #logo, header li{
+      padding: 0;
+      margin-top: 10px;
+      text-align: center;
+  }
+
+  header .profilo{
+    margin: 10px 0;
+    padding-top: 10px;
+    text-align: center;
+
+  }
