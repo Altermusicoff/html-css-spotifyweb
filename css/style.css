@@ -179,7 +179,7 @@ main .navigazione-section{
    top: 0;
    right: 0;
    text-align: right;
-   width: 100%;
+   width: calc(100% - 250px);
    min-height: 100px;
    overflow: hidden;
    z-index: 200;
@@ -193,7 +193,7 @@ main .navigazione-section{
    border: 2px solid white;
    border-radius: 25px;
    padding: 11px 30px;
-   margin: 25px 35px;
+   margin: 25px 35px 0 0;
    transition: transform 0.2s;
  }
  .upgrade a:hover{
@@ -306,7 +306,7 @@ main .navigazione-section{
  /* Colonna footer centrale */
  .music-player{
    text-align: center;
-   flex-basis: 60%;
+   flex-basis: 35%;
    min-width: 225px;
  }
 

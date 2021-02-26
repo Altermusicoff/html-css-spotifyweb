@@ -45,4 +45,7 @@
     text-align: center;
   }
 
+  .upgrade{
+       width: calc(100% - 50px);
+  }
 }
